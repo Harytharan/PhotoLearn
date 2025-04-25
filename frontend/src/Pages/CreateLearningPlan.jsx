@@ -89,9 +89,7 @@ const CreateLearningPlan = () => {
         navigate("/");
         setActiveTab("tab3");
       }
-    } catch (error) {
-      toast.error("Failed to save learning plan");
-    }
+  
   };
 
   const goToLearningPlans = () => {
