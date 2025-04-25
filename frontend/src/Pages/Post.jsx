@@ -136,11 +136,7 @@ const Post = () => {
 
     if (selectedFile) {
       getVideoDurationInSeconds(selectedFile).then((duration) => {
-        if (duration > 30) {
-          setError("video", {
-            type: "manual",
-            message: "Video duration should be less than 30 seconds",
-          });
+        
         } else {
           clearErrors("video");
           setVideo(selectedFile);
