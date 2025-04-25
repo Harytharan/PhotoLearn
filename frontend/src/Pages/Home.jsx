@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Layout from "../components/Layout";
-import { TETabs, TETabsItem } from "tw-elements-react";
+import { TETabs, TETabsItem } from "tw-elements-react"; 
 import PostsList from "../components/PostsList";
 import axios from "axios";
 import toast from "react-hot-toast";

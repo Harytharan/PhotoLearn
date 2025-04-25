@@ -8,7 +8,7 @@ import backgroundImg from '../images/statusBck.jpg';
 const LearningPlan = ({ user }) => {
   const [learningPlans, setLearningPlans] = useState([]);
   const navigate = useNavigate();
-
+//
   useEffect(() => {
     const fetchLearningPlans = async () => {
       try {
@@ -17,38 +17,40 @@ const LearningPlan = ({ user }) => {
           setLearningPlans(res.data);
         }
       } catch (error) {
-        toast.error("Failed to fetch learning plans");
+        toast.error("Failed to fetch learning plans");//olunga padikonum
       }
     };
     fetchLearningPlans();
   }, []);
-
+//set fetch error message.
   const deleteLearningPlan = async (plan) => {
     try {
-      await axios.delete(`http://localhost:8080/learningPlans/${plan.learningPlanId}`);
+      await axios.delete(`http://localhost:8080/learningPlans/${plan.learningPlanId}`);//paff vathai paadam
       setLearningPlans((prevPlans) =>
           prevPlans.filter((p) => p.learningPlanId !== plan.learningPlanId)
       );
-      toast.success("Learning plan deleted successfully");
+      toast.success("Learning plan deleted successfully");//add successfull message
     } catch (error) {
-      toast.error("Failed to delete learning plan");
+
+      toast.error("Failed to delete learning plan");//set the error message
     }
   };
 
   const navigateEditPage = (plan) => {
-    navigate(`/CreateLearningPlan/${plan.learningPlanId}`);
+    navigate(`/CreateLearningPlan/${plan.learningPlanId}`);//
+
   };
 
   return (
       <div
           className="container mx-auto p-4 min-h-screen"
           style={{
-            backgroundImage: `url(${backgroundImg})`,
+            backgroundImage: `url(${backgroundImg})`,//
             backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",
+            backgroundRepeat: "no-repeat",// paathukalam
             backgroundSize: "cover",
             backgroundAttachment: "fixed",
-          }}
+          }}//
       >
         <div className="space-y-4 flex justify-center flex-col items-center">
           {learningPlans.map((plan, index) => (

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../images/logoGym.png";
-
+import logo from "../images/logoGym.png";//import logo
+//
 const Navbar = ({ user }) => {
   return (
     <header className="fixed top-0 left-0 right-0 h-16 bg-white/80 backdrop-blur-lg shadow-md z-40">

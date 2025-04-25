@@ -17,7 +17,7 @@ export const SharedPostlist = ({
   reFetchSharedPost,
   setReFetchSharedPost,
 }) => {
-  console.log(post, user, reFetchSharedPost, setReFetchSharedPost);
+  console.log(post, user, reFetchSharedPost, setReFetchSharedPost);//comments
   //   const [showModal, setShowModal] = useState(false);
   //   const [comment, setComment] = useState(null);
   //   const [editComment, setEditComment] = useState(false);
@@ -240,8 +240,9 @@ export const SharedPostlist = ({
                     className="mt-3"
                     style={{ maxWidth: "570px", height: "auto" }}
                   >
-                    <source src={post?.post?.video} type="video/mp4" />
-                    Your browser does not support the video tag.
+                    {/* video not accepted */}
+                    <source src={post?.post?.video} type="video/mp4" /> 
+                    Your browser does not support the video tag. 
                   </video>
                 </>
               )}
