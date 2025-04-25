@@ -120,15 +120,7 @@ const Post = () => {
       return;
     }
 
-    if (selectedFiles.length > 3) {
-      setError("images", {
-        type: "manual",
-        message: "Maximum of 3 images allowed",
-      });
-    } else {
-      clearErrors("images");
-      setImages([...selectedFiles]);
-    }
+   
   }
 
   function onVideoChange(e) {
