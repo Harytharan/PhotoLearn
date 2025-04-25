@@ -5,7 +5,7 @@ import axios from 'axios';
 
 const ActiveUsers = () => {
   const [activeUsers, setActiveUsers] = useState([]);
-  const [user, setUser] = useState(null);//hgfhdsg
+  const [user, setUser] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
 
@@ -33,7 +33,7 @@ const ActiveUsers = () => {
         setActiveUsers([]);
       } finally {
         setIsLoading(false);
-      }
+      }//
     };
 
     if (user) {
