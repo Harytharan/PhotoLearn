@@ -20,7 +20,7 @@ const formSchema = yup.object().shape({
 
 const getVideoDurationInSeconds = (file) => {
   return new Promise((resolve, reject) => {
-    const video = document.createElement("video");
+    const video = document.createElement("video");//set video duration
     video.preload = "metadata";
     video.onloadedmetadata = () => {
       window.URL.revokeObjectURL(video.src);
