@@ -14,7 +14,7 @@ import backgroundImg from "../images/PostBac.jpg";
 const storage = getStorage(app);
 
 const formSchema = yup.object().shape({
-  title: yup.string().required("Title is required"),
+  title: yup.string().required("Title is required"),//set required message
   description: yup.string().required("Description is required"),
 });
 
