@@ -22,7 +22,7 @@ const LearningPlan = ({ user }) => {
     };
     fetchLearningPlans();
   }, []);
-
+//set fetch error message
   const deleteLearningPlan = async (plan) => {
     try {
       await axios.delete(`http://localhost:8080/learningPlans/${plan.learningPlanId}`);
