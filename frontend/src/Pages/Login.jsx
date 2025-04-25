@@ -100,7 +100,7 @@ export default function Login() {
                 {...register("password")}
                 className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-purple-500 focus:border-transparent transition duration-200"
                 placeholder="Enter your password"
-                onBlur={() => trigger("password")} 
+                onBlur={() => trigger("password")} // Use onBlur to trigger validation
               />
               {errors.password && (
                 <p className="mt-1 text-sm text-red-500">{errors.password.message}</p>
