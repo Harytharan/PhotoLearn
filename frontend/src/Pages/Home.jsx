@@ -5,7 +5,7 @@ import PostsList from "../components/PostsList";
 import axios from "axios";// pavithiran 
 import toast from "react-hot-toast";
 import LearningStatus from "./LearningStatus";
-import LearningPlan from "./LearningPlan";//hiii
+import LearningPlan from "./LearningPlan";
 
 import { useActiveTab } from "../context/ActiveTabContext";
 import { SharedPostlist } from "../components/SharedPostlist";
