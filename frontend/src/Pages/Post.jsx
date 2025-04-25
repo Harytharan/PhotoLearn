@@ -28,7 +28,7 @@ const getVideoDurationInSeconds = (file) => {
       resolve(duration);
     };
     video.onerror = (error) => {
-      reject(error);
+      reject(error);//set error
     };
     video.src = URL.createObjectURL(file);
   });
