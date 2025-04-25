@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Layout from "../components/Layout";
 import { TETabs, TETabsItem } from "tw-elements-react"; //home
 import PostsList from "../components/PostsList";
-import axios from "axios";
+import axios from "axios";// pavithiran 
 import toast from "react-hot-toast";
 import LearningStatus from "./LearningStatus";
 import LearningPlan from "./LearningPlan";
