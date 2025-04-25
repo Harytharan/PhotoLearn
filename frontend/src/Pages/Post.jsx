@@ -14,13 +14,13 @@ import backgroundImg from "../images/PostBac.jpg";
 const storage = getStorage(app);
 
 const formSchema = yup.object().shape({
-  title: yup.string().required("Title is required"),
+  title: yup.string().required("Title is required"),//set required message
   description: yup.string().required("Description is required"),
 });
 
 const getVideoDurationInSeconds = (file) => {
   return new Promise((resolve, reject) => {
-    const video = document.createElement("video");
+    const video = document.createElement("video");//set video duration
     video.preload = "metadata";
     video.onloadedmetadata = () => {
       window.URL.revokeObjectURL(video.src);
@@ -28,9 +28,9 @@ const getVideoDurationInSeconds = (file) => {
       resolve(duration);
     };
     video.onerror = (error) => {
-      reject(error);
+      reject(error);//set error
     };
-    video.src = URL.createObjectURL(file);
+    video.src = URL.createObjectURL(file);//set video url
   });
 };
 
