@@ -32,7 +32,7 @@ const ActiveUsers = () => {
         setError('Failed to fetch users');
         setActiveUsers([]);
       } finally {
-        setIsLoading(false);
+        setIsLoading(false);//hdgf
       }//
     };
 
