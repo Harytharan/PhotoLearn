@@ -25,7 +25,7 @@ const LearningPlan = ({ user }) => {
 
   const deleteLearningPlan = async (plan) => {
     try {
-      await axios.delete(`http://localhost:8080/learningPlans/${plan.learningPlanId}`);
+      await axios.delete(`http://localhost:8080/learningPlans/${plan.learningPlanId}`);//paff vathai paadam
       setLearningPlans((prevPlans) =>
           prevPlans.filter((p) => p.learningPlanId !== plan.learningPlanId)
       );
