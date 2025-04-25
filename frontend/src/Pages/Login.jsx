@@ -115,12 +115,7 @@ export default function Login() {
               {isSubmitting ? "Signing in..." : "Sign In"}
             </button>
 
-            <div className="flex items-center justify-center space-x-2 my-6">
-              <div className="flex-1 h-px bg-gray-300"></div>
-              <span className="text-gray-500 text-sm">OR</span>
-              <div className="flex-1 h-px bg-gray-300"></div>
-            </div>
-
+            
             <button
               type="button"
               onClick={handleGoogleLogin}
