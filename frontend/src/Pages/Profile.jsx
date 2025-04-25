@@ -7,7 +7,7 @@ import PostsList from "../components/PostsList";
 const Profile = () => {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(false);
-  const [loginUser, setLoginUser] = useState(null);
+  const [loginUser, setLoginUser] = useState(null);// thevarasa pavithiran 
   const { userId } = useParams();
   const [posts, setPosts] = useState([]);
   const [reFetchPost, setReFetchPost] = useState(false);
