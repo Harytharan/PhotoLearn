@@ -81,14 +81,7 @@ const Post = () => {
     }
   }, [postId]);
 
-  useEffect(() => {
-    const user = JSON.parse(localStorage.getItem("user"));
-    setUser(user);
-
-    if (!user) {
-      window.location.href = "/login";
-    }
-  }, []);
+ 
 
   const {
     register,
