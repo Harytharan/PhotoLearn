@@ -8,7 +8,7 @@ import backgroundImg from '../images/statusBck.jpg';
 const LearningPlan = ({ user }) => {
   const [learningPlans, setLearningPlans] = useState([]);
   const navigate = useNavigate();
-
+//
   useEffect(() => {
     const fetchLearningPlans = async () => {
       try {
