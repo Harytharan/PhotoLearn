@@ -4,16 +4,7 @@ import MainSideBar from "./MainSideBar";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { useLocation } from "react-router-dom";
 
-const Layout = ({ children }) => {
-  const [isSidebarOpen, setIsSidebarOpen] = useState(true);
-  const [user, setUser] = useState(null);
 
-  useEffect(() => {
-    const userData = localStorage.getItem("user");
-    if (userData) {
-      setUser(JSON.parse(userData));
-    }
-  }, []);
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-50 via-white to-blue-50">
