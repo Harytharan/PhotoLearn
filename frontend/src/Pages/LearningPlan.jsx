@@ -48,7 +48,7 @@ const LearningPlan = ({ user }) => {
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
             backgroundAttachment: "fixed",
-          }}
+          }}//
       >
         <div className="space-y-4 flex justify-center flex-col items-center">
           {learningPlans.map((plan, index) => (
