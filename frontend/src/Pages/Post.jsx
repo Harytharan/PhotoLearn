@@ -154,7 +154,8 @@ const Post = () => {
     if (!editPost) {
       if (!imageSelected && !video) {
         setError("video", {
-         
+          type: "manual",
+          message: "Video is required",
         });
         return;
       }
