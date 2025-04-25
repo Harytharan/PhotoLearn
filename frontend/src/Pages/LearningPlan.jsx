@@ -36,7 +36,7 @@ const LearningPlan = ({ user }) => {
   };
 
   const navigateEditPage = (plan) => {
-    navigate(`/CreateLearningPlan/${plan.learningPlanId}`);
+    navigate(`/CreateLearningPlan/${plan.learningPlanId}`);//
   };
 
   return (
