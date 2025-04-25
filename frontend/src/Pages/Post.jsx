@@ -58,7 +58,18 @@ const Post = () => {
         );
         setPost(data);
 
-      
+        if (data.video) {
+          setVideoSelected(true);
+          setImageSelected(false);
+        }
+
+        if (data.images.length > 0) {
+          setImageSelected(true);
+          setVideoSelected(false);
+        }
+      } catch (error) {
+        console.log(error);
+      }
     };
 
     if (postId) {
