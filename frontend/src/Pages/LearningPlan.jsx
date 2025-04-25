@@ -17,7 +17,7 @@ const LearningPlan = ({ user }) => {
           setLearningPlans(res.data);
         }
       } catch (error) {
-        toast.error("Failed to fetch learning plans");
+        toast.error("Failed to fetch learning plans");//olunga padikonum
       }
     };
     fetchLearningPlans();
