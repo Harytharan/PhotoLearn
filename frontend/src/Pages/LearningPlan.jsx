@@ -32,11 +32,11 @@ const LearningPlan = ({ user }) => {
       toast.success("Learning plan deleted successfully");
     } catch (error) {
       toast.error("Failed to delete learning plan");
-    }
+    } // paathukalam
   };
 
   const navigateEditPage = (plan) => {
-    navigate(`/CreateLearningPlan/${plan.learningPlanId}`);
+    navigate(`/CreateLearningPlan/${plan.learningPlanId}`);// paathukalam
   };
 
   return (
