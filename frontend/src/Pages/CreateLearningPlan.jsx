@@ -56,7 +56,12 @@ const CreateLearningPlan = () => {
   }, []);
 
   const handleSubmit = async (e) => {
-   
+    e.preventDefault();
+    if (!user) return;
+
+    if (!selectedSubject || !learningPlanName || !hoursPerDay || !schedule || !description) {
+      return toast.error("Please fill all the fields");
+    }
 
     const planData = {
       userId: user.id,
