@@ -18,22 +18,7 @@ const Navbar = ({ user }) => {
           
           <div className="flex items-center space-x-4">
             {user && (
-              <Link 
-                to={`/profile/${user.id}`} 
-                className="flex items-center space-x-2 group"
-              >
-                <div className="relative">
-                  <img
-                    src={user.profileImage}
-                    alt="profile"
-                    className="w-10 h-10 rounded-full border-2 border-purple-500 transition-transform duration-300 group-hover:scale-110"
-                  />
-                  <div className="absolute -bottom-1 -right-1 w-3 h-3 bg-green-500 rounded-full border-2 border-white"></div>
-                </div>
-                <span className="hidden md:block text-gray-700 font-medium group-hover:text-purple-600 transition-colors">
-                  {user.name}
-                </span>
-              </Link>
+              
             )}
           </div>
         </div>
