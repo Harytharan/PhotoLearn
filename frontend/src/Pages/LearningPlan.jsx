@@ -45,7 +45,7 @@ const LearningPlan = ({ user }) => {
           style={{
             backgroundImage: `url(${backgroundImg})`,
             backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",
+            backgroundRepeat: "no-repeat",// paathukalam
             backgroundSize: "cover",
             backgroundAttachment: "fixed",
           }}
