@@ -42,13 +42,7 @@ const LearningPlan = ({ user }) => {
   return (
       <div
           className="container mx-auto p-4 min-h-screen"
-          style={{
-            backgroundImage: `url(${backgroundImg})`,
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",// paathukalam
-            backgroundSize: "cover",
-            backgroundAttachment: "fixed",
-          }}
+          
       >
         <div className="space-y-4 flex justify-center flex-col items-center">
           {learningPlans.map((plan, index) => (
