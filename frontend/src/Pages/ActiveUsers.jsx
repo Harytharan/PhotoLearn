@@ -5,7 +5,7 @@ import axios from 'axios';
 
 const ActiveUsers = () => {
   const [activeUsers, setActiveUsers] = useState([]);
-  const [user, setUser] = useState(null);//hgfhdsg
+  const [user, setUser] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
 
@@ -32,8 +32,8 @@ const ActiveUsers = () => {
         setError('Failed to fetch users');
         setActiveUsers([]);
       } finally {
-        setIsLoading(false);
-      }
+        setIsLoading(false);//hdgf
+      }//
     };
 
     if (user) {

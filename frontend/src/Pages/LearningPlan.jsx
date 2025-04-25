@@ -17,7 +17,7 @@ const LearningPlan = ({ user }) => {
           setLearningPlans(res.data);
         }
       } catch (error) {
-        toast.error("Failed to fetch learning plans");
+        toast.error("Failed to fetch learning plans");//olunga padikonum
       }
     };
     fetchLearningPlans();
@@ -25,7 +25,7 @@ const LearningPlan = ({ user }) => {
 //set fetch error message.
   const deleteLearningPlan = async (plan) => {
     try {
-      await axios.delete(`http://localhost:8080/learningPlans/${plan.learningPlanId}`);
+      await axios.delete(`http://localhost:8080/learningPlans/${plan.learningPlanId}`);//paff vathai paadam
       setLearningPlans((prevPlans) =>
           prevPlans.filter((p) => p.learningPlanId !== plan.learningPlanId)
       );
