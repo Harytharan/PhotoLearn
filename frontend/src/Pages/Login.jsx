@@ -67,7 +67,7 @@ export default function Login() {
         backgroundSize: "cover",
       }}
     >
-     
+      <div className="w-full max-w-md">
         <div className="bg-white/80 backdrop-blur-lg rounded-2xl shadow-xl p-8">
           <div className="text-center mb-8">
             <h2 className="text-3xl font-bold text-gray-800 mb-2">Welcome Back</h2>
