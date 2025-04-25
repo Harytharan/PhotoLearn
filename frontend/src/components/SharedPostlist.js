@@ -240,8 +240,9 @@ export const SharedPostlist = ({
                     className="mt-3"
                     style={{ maxWidth: "570px", height: "auto" }}
                   >
-                    <source src={post?.post?.video} type="video/mp4" />
-                    Your browser does not support the video tag.
+                    {/* video not accepted */}
+                    <source src={post?.post?.video} type="video/mp4" /> 
+                    Your browser does not support the video tag. 
                   </video>
                 </>
               )}
