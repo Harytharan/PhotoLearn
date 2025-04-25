@@ -111,7 +111,14 @@ const Post = () => {
   function onImageChange(e) {
     const selectedFiles = e.target.files;
 
-    
+    if (!selectedFiles || selectedFiles.length === 0) {
+      setError("images", {
+        type: "manual",
+        message: "Please select at least one image",
+      });
+      setImages([]);
+      return;
+    }
 
     if (selectedFiles.length > 3) {
       setError("images", {
