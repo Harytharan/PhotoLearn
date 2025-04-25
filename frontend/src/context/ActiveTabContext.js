@@ -2,7 +2,7 @@ import React, { createContext, useContext, useState } from "react";
 
 const ActiveTabContext = createContext();
 
-export const useActiveTab = () => useContext(ActiveTabContext);
+export const useActiveTab = () => useContext(ActiveTabContext);//intha ui en ipide kidakku
 
 export const ActiveTabProvider = ({ children }) => {
   const [activeTab, setActiveTab] = useState("tab1");//Asdfths
