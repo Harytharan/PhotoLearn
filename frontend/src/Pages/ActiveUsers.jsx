@@ -5,7 +5,7 @@ import axios from 'axios';
 
 const ActiveUsers = () => {
   const [activeUsers, setActiveUsers] = useState([]);
-  const [user, setUser] = useState(null);
+  const [user, setUser] = useState(null);//hgfhdsg
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
 
