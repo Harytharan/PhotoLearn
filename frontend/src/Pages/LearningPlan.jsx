@@ -31,7 +31,7 @@ const LearningPlan = ({ user }) => {
       );
       toast.success("Learning plan deleted successfully");//add successfull message
     } catch (error) {
-      toast.error("Failed to delete learning plan");
+      toast.error("Failed to delete learning plan");//set the error message
     }
   };
 
