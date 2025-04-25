@@ -43,7 +43,7 @@ const LearningPlan = ({ user }) => {
       <div
           className="container mx-auto p-4 min-h-screen"
           style={{
-            backgroundImage: `url(${backgroundImg})`,
+            backgroundImage: `url(${backgroundImg})`,//
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
