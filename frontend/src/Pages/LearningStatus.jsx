@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 import backgroundImg from '../images/statusBck.jpg';
 
 const LearningStatus = ({ user }) => {
-    const [learningStatuses, setLearningStatuses] = useState([]);
+    const [learningStatuses, setLearningStatuses] = useState([]);// imporatnt 
 
     const navigate = useNavigate();
 
