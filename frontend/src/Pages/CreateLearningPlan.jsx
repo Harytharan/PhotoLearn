@@ -6,14 +6,7 @@ import { useActiveTab } from "../context/ActiveTabContext";
 import toast from "react-hot-toast";
 import axios from "axios";
 
-const subjects = [
-  "Programming",
-  "Data Science",
-  "Web Development",
-  "Machine Learning",
-  "Mathematics",
-  "Others",
-];
+
 
 const CreateLearningPlan = () => {
   const [selectedSubject, setSelectedSubject] = useState("Programming");
