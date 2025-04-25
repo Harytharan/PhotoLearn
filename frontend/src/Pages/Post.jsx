@@ -9,7 +9,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import axios from "axios";
 import toast from "react-hot-toast";
-import backgroundImg from "../images/PostBac.jpg";//
+import backgroundImg from "../images/PostBac.jpg";
 
 const storage = getStorage(app);
 
