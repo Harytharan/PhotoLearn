@@ -72,7 +72,14 @@ const Post = () => {
       }
     };
 
-   
+    if (postId) {
+      fetchSinglePost();
+      setEditPost(true);
+    } else {
+      setEditPost(false);
+      setPost(null);
+    }
+  }, [postId]);
 
   useEffect(() => {
     const user = JSON.parse(localStorage.getItem("user"));
