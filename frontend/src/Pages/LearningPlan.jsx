@@ -6,7 +6,7 @@ import { AiFillDelete, AiFillEdit } from 'react-icons/ai';
 import backgroundImg from '../images/statusBck.jpg';
 
 const LearningPlan = ({ user }) => {
-  const [learningPlans, setLearningPlans] = useState([]);// important 
+  const [learningPlans, setLearningPlans] = useState([]);
   const navigate = useNavigate();
 
   useEffect(() => {
