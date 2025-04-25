@@ -31,12 +31,14 @@ const LearningPlan = ({ user }) => {
       );
       toast.success("Learning plan deleted successfully");//add successfull message
     } catch (error) {
+
       toast.error("Failed to delete learning plan");//set the error message
     }
   };
 
   const navigateEditPage = (plan) => {
     navigate(`/CreateLearningPlan/${plan.learningPlanId}`);//
+
   };
 
   return (
@@ -45,7 +47,7 @@ const LearningPlan = ({ user }) => {
           style={{
             backgroundImage: `url(${backgroundImg})`,//
             backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",
+            backgroundRepeat: "no-repeat",// paathukalam
             backgroundSize: "cover",
             backgroundAttachment: "fixed",
           }}//
