@@ -91,7 +91,16 @@ const Post = () => {
   }, []);
 
   const {
-  
+    register,
+    handleSubmit,
+    formState: { errors, isSubmitting },
+    setError,
+    setValue,
+    clearErrors,
+  } = useForm({
+    resolver: yupResolver(formSchema),
+  });
+
   useEffect(() => {
     if (images.length < 1) return;
     const newImageUrls = [];
