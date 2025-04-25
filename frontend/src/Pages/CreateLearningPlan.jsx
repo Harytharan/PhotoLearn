@@ -79,11 +79,7 @@ const CreateLearningPlan = () => {
           : await axios.post(`http://localhost:8080/learningPlans`, planData);
 
       if (res.status === 200 || res.status === 201) {
-        toast.success(
-            editLearningPlans
-                ? "Learning Plan Updated Successfully"
-                : "Learning Plan Created Successfully"
-        );
+    
         setLearningPlanName("");
         setHoursPerDay("");
         setSchedule("");
