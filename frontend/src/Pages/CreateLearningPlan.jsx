@@ -96,14 +96,7 @@ const CreateLearningPlan = () => {
             ? "Learning Plan Updated Successfully"
             : "Learning Plan Created Successfully"
         );
-        setLearningPlanName("");
-        setHoursPerDay("");
-        setSchedule("");
-        setDate("");
-        setDescription("");
-        setSelectedSubject("Programming");
-        navigate("/");
-        setActiveTab("tab3");
+        
       }
     } catch (error) {
       toast.error("Failed to save learning plan");
