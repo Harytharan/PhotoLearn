@@ -96,7 +96,7 @@ const CreateLearningPlan = () => {
             ? "Learning Plan Updated Successfully"
             : "Learning Plan Created Successfully"
         );
-        
+        setLearningPlanName("");
         setHoursPerDay("");
         setSchedule("");
         setDate("");
