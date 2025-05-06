@@ -216,7 +216,11 @@ export const SharedPostlist = ({
                 </>
               ) : post?.post?.images?.length === 2 ? (
                 <>
-                  
+                  <img
+                    src={post?.post?.images[0]}
+                    alt=""
+                    className="bg-red-500 rounded-2xl w-1/3 object-cover h-96 flex-auto"
+                  />
                   <img
                     src={post?.post?.images[1]}
                     alt=""
