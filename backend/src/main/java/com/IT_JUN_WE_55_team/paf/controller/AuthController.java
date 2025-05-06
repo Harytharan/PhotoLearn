@@ -27,20 +27,5 @@ public class AuthController {
 
     @GetMapping("/api/user")
     @ResponseBody
-    public ResponseEntity<Object> getUsername(@AuthenticationPrincipal OAuth2User principal) {
-        if (principal != null) {
-            String name = principal.getAttribute("name");
-            String email = principal.getAttribute("email");
-            String picture = principal.getAttribute("picture");
-            User user = new User();
-            user.setEmail(email);
-            user.setName(name);
-            user.setProfileImage(picture);
-            user.setSource(RegistrationSource.GOOGLE);
-
-            return userService.createUser(user);
-        } else {
-            return ResponseEntity.status(Response.SC_UNAUTHORIZED).build();
-        }
-    }
+    
 }
