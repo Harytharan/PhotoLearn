@@ -10,19 +10,7 @@ const LearningStatus = ({ user }) => {
 
     const navigate = useNavigate();
 
-    useEffect(() => {
-        const fetchLearningStatuses = async () => {
-            try {
-                const res = await axios.get("http://localhost:8080/learningStatus");
-                if (res.status === 200) {
-                    setLearningStatuses(res.data);
-                }
-            } catch (error) {
-                toast.error("Failed to fetch Learning statuses");
-            }
-        };
-        fetchLearningStatuses();
-    }, []);
+    
 
     const deleteLearning = async (status) => {
         try {
