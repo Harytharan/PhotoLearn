@@ -183,7 +183,7 @@ export const SharedPostlist = ({
                 <div className="flex flex-col">
                   <b className="mb-2 capitalize">{post?.post?.username}</b>
                   <time datetime="06-08-21" className="text-gray-400 text-xs">
-                    
+                    <TimeAgo date={post?.post?.date} />
                   </time>
                 </div>
               </div>
