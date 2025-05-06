@@ -11,7 +11,7 @@ const Navbar = ({ user }) => {
             <Link to="/" className="flex items-center space-x-2">
               <img src={logo} alt="logo" className="w-8 h-8" />
               <span className="text-xl font-bold bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent">
-                Learn Star
+                Photo Learn
               </span>
             </Link>
           </div>

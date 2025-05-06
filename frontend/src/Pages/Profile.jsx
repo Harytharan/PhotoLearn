@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 import Layout from "../components/Layout";
+import profilebg from '../images/profilebg.jpeg';
 import { useParams } from "react-router-dom";
 import axios from "axios";
-import PostsList from "../components/PostsList"; //profile section
+import PostsList from "../components/PostsList";
 
 const Profile = () => {
   const [user, setUser] = useState(null);
@@ -90,8 +91,8 @@ const Profile = () => {
           <section>
             <img
               className="w-full h-64 object-cover"
-              src="https://hometriangle.com/blogs/content/images/2022/02/Home-Gym-for-Small-Spaces-1.png"
-              alt=""
+              src={profilebg}
+              alt="profile"
             />
           </section>
 
