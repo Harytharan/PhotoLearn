@@ -118,7 +118,7 @@ const CreateLearningPlan = () => {
     <Layout>
       <div
         className="min-h-screen p-4 bg-cover bg-center"
-        style={{ backgroundImage: `url(${backgroundImg})` }}
+        style={{ backgroundImage: `url(${backgroundImg})` }} //fwefegfwe
       >
         <form
           onSubmit={handleSubmit}
