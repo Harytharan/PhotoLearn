@@ -144,7 +144,7 @@ const CreateLearningPlan = () => {
                 </option>
               ))}
             </select>
-          </div>
+          </div> 
 
           <div className="mb-4">
             <label className="block text-sm font-medium text-gray-700">
