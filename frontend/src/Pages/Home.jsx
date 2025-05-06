@@ -29,7 +29,7 @@ const Home = () => {
     };
     fetchAllPosts();
   }, []);
-
+//useeffect use for fetch the api
   useEffect(() => {
     const fetchData = async () => {
       try {
