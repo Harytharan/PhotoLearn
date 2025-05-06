@@ -1,7 +1,5 @@
 package com.IT_JUN_WE_55_team.paf.controller;
 
-
-
 import org.apache.catalina.connector.Response;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -19,6 +17,7 @@ import com.IT_JUN_WE_55_team.paf.service.UserService;
 public class AuthController {
     @Autowired
     private UserService userService;
+
     @GetMapping("/")
     public String home(@AuthenticationPrincipal OAuth2User principal) {
         System.out.println("/looooo" + principal);
