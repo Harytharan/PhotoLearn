@@ -135,7 +135,7 @@ const CreateLearningPlan = () => {
             </label>
             <select
               value={selectedSubject}
-              onChange={(e) => setSelectedSubject(e.target.value)} //target values
+              onChange={(e) => setSelectedSubject(e.target.value)}
               className="w-full p-2 border border-gray-300 rounded-md"
             >
               {subjects.map((subject, index) => (
