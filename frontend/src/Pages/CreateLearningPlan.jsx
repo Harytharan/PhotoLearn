@@ -121,7 +121,7 @@ const CreateLearningPlan = () => {
         style={{ backgroundImage: `url(${backgroundImg})` }}
       >
         <form
-         
+          onSubmit={handleSubmit}
           className="max-w mx-auto my-6 bg-white p-12 rounded-lg shadow-md"
           style={{ backgroundColor: "rgba(255, 255, 255, 0.75)" }}
         >
