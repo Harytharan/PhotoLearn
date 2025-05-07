@@ -257,6 +257,7 @@ const PostsList = ({
               className="flex items-center	gap-3 cursor-pointer"
               onClick={() => setShareModal(true)}
             >
+              <FaShareFromSquare size={22} />
               <p> Share</p>
             </div>
           </div>
