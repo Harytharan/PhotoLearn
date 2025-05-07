@@ -176,7 +176,21 @@ const PostsList = ({
           <div className="mt-5 flex gap-2	 justify-center border-b pb-4 flex-wrap	w-[600px] max-w-[700px]">
             {post?.images?.length === 3 ? (
               <>
-                
+                <img
+                  src={post.images[0]}
+                  alt=""
+                  className="bg-red-500 rounded-2xl w-1/3 object-cover h-96 flex-auto"
+                />
+                <img
+                  src={post.images[1]}
+                  alt=""
+                  className="bg-red-500 rounded-2xl w-1/3 object-cover h-96 flex-auto"
+                />
+                <img
+                  src={post.images[2]}
+                  alt=""
+                  className="bg-red-500 rounded-2xl w-1/3 object-cover h-96 flex-auto"
+                />
               </>
             ) : post?.images?.length === 2 ? (
               <>
