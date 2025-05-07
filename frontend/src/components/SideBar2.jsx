@@ -7,16 +7,7 @@ const SideBar2 = ({ logUser }) => {
   // const [logUser, setLogUser] = useState(null);
   const navigate = useNavigate();
 
-  useEffect(() => {
-    const fetchUsers = async () => {
-      try {
-        const res = await axios.get("http://localhost:8080/users");
-        setUsers(res.data);
-      } catch (error) {}
-    };
-    fetchUsers();
-  }, []);
-
+  
 
   // useEffect(() => {
   //   const logUser = localStorage.getItem("user");
