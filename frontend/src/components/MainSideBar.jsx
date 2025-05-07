@@ -63,8 +63,8 @@ const MainSideBar = ({ user, isOpen }) => {
                 className={({ isActive }) =>
                   `flex items-center space-x-3 px-4 py-3 rounded-lg transition-colors duration-200 ${
                     isActive
-                      ? "bg-purple-600 text-white shadow-lg"
-                      : "text-gray-600 hover:bg-purple-50 hover:text-purple-600"
+                      ? "bg-gradient-to-r from-teal-400 to-blue-700 text-white shadow-lg"
+                      : "text-gray-600 hover:bg-teal-50 hover:text-teal-600"
                   }`
                 }
               >

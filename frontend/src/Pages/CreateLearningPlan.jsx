@@ -5,7 +5,7 @@ import backgroundImg from "../images/workoutBck.jpg";
 import { useActiveTab } from "../context/ActiveTabContext";
 import toast from "react-hot-toast";
 import axios from "axios";
-
+//modify the planning
 const subjects = [
   "Portrait Photography",
   "Landscape Photography",
