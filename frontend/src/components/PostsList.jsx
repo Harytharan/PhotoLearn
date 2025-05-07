@@ -153,7 +153,18 @@ const PostsList = ({
             <div className="bg-gray-100	rounded-full h-3.5 flex	items-center justify-center gap-3">
               {user?.id === post?.userId && (
                 <>
-                  
+                  <AiFillDelete
+                    size={20}
+                    color="red"
+                    className="cursor-pointer"
+                    onClick={() => deletePost(post)}
+                  />
+                  <AiFillEdit
+                    size={20}
+                    color="blue"
+                    className="cursor-pointer"
+                    onClick={navigateEditPage}
+                  />
                 </>
               )}
             </div>
