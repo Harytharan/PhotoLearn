@@ -1,12 +1,12 @@
 import React from "react";
-import { useNavigate } from "react-router-dom"; //button
+import { useNavigate } from "react-router-dom"; 
 import axios from "axios";
 import { toast } from "react-hot-toast";
 import * as yup from "yup";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import backgroundImg from "../images/bck1.jpg";
-
+//login form validation 
 const formSchema = yup.object().shape({
   email: yup.string().email().required("Email is required"),
   password: yup
